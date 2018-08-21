@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="card-header card-title">Product Details</div>
+  <form>
+   
+    <div class="form-group-row">
+      <label class="col-form-label">Product Name</label>
+      <input type="text" name="productname" id="productname"
+      class="form-control"[(ngModel)]="model.productName" readonly/>
+    </div>
+    <div class="form-group-row">
+      <label class="col-form-label">Unit Price</label>
+      <input type="text" name="unitprice" id="unitprice"
+      class="form-control"[(ngModel)]="model.unitPrice" readonly/>
+     </div>
+        <div class="form-group-row">
+            <label class="col-form-label">Units In Stock</label>
+            <input type="text" name="unitsinstock" id="unitsinstock"
+            class="form-control" [(ngModel)]="model.unitsInStock" readonly/>
+     </div>
+     <button type="button" class="btn btn-outline-primary mr-2" (click)="goBackToList()">Back to list</button>
+     <!-- <button type="reset" class="btn btn-outline-info mr-2">Cancel</button> -->
+  
+  </form>
+</div>

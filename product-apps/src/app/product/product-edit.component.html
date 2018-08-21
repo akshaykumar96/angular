@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="card-header card-title">Product Details</div>
+    <form novalidate (submit)="submit()">
+     
+      <div class="form-group-row">
+        <label class="col-form-label">Product Name</label>
+        <input type="text" name="productname" id="productname"
+        class="form-control"[(ngModel)]="model.productName" />
+      </div>
+      <div class="form-group-row">
+        <label class="col-form-label">Unit Price</label>
+        <input type="text" name="unitprice" id="unitprice"
+        class="form-control"[(ngModel)]="model.unitPrice" />
+       </div>
+          <div class="form-group-row">
+              <label class="col-form-label">Units In Stock</label>
+              <input type="text" name="unitsinstock" id="unitsinstock"
+              class="form-control" [(ngModel)]="model.unitsInStock" />
+       </div>
+       <button type="submit" class="btn btn-outline-primary mr-2">Save</button>
+       <button type="reset" class="btn btn-outline-info mr-2">reset</button>
+       <button type="button" class="btn btn-outline-primary mr-2" (click)="goBackToList()">Back to list</button>
+       <!-- <button type="reset" class="btn btn-outline-info mr-2">Cancel</button> -->
+    
+    </form>
+  </div>
+  
